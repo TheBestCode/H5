@@ -1,0 +1,45 @@
+@import "common";
+.index-container {
+    background: #F9F9F9;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    >ul {
+        width: rem(340px);
+        margin: rem(20px) auto;
+        -webkit-padding-start: 0;
+        overflow: hidden;
+        >li {
+            float: left;
+            list-style: none;
+            width: rem(170px);
+            height: rem(170px);
+            line-height: rem(170px);
+            text-align: center;
+            background: #E1673E;
+            >a {
+                display: block;
+                height: 100%;
+                width: 100%;
+                text-decoration: none;
+                color: #fff;
+                font-size: rem(26px);
+                -webkit-user-select: none;
+            }
+        }
+        >li:nth-child(1) {
+            width: 100%;
+        }
+        >li:nth-child(2) {
+            width: rem(168px);
+            margin-top: rem(2px);
+            margin-right: rem(2px);
+        }
+        >li:nth-child(3),
+        >li:nth-child(4) {
+            margin-top: rem(2px);
+            height: rem(83px);
+            line-height: rem(83px);
+        }
+    }
+}

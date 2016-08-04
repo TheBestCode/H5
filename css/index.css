@@ -1,0 +1,16 @@
+body { position: absolute; left: 0; top: 0; width: 100%; height: 100%; -webkit-overflow-scrolling: touch; overflow-y: scroll; overflow-x: hidden; font-family: "microsoft yahei"; }
+
+.page { position: absolute; left: 0; top: 0; width: 100%; height: 100%; -webkit-overflow-scrolling: touch; overflow-y: scroll; overflow-x: hidden; }
+.page > header.head-title { position: absolute; top: 0; left: 0; width: 100%; height: 1.06667rem; line-height: 1.06667rem; background: #3C3232; color: #fff; font-size: 0.42667rem; text-align: center; }
+.page > header.head-title > a.back { position: absolute; left: 0; width: 1.06667rem; height: 100%; display: block; text-align: center; text-decoration: none; color: #fff; }
+.page section.container { position: absolute; top: 1.06667rem; left: 0; right: 0; bottom: 0; }
+
+.index-container { background: #F9F9F9; width: 100%; height: 100%; overflow: hidden; }
+.index-container > ul { width: 9.06667rem; margin: 0.53333rem auto; -webkit-padding-start: 0; overflow: hidden; }
+.index-container > ul > li { float: left; list-style: none; width: 4.53333rem; height: 4.53333rem; line-height: 4.53333rem; text-align: center; background: #E1673E; }
+.index-container > ul > li > a { display: block; height: 100%; width: 100%; text-decoration: none; color: #fff; font-size: 0.69333rem; -webkit-user-select: none; }
+.index-container > ul > li:nth-child(1) { width: 100%; }
+.index-container > ul > li:nth-child(2) { width: 4.48rem; margin-top: 0.05333rem; margin-right: 0.05333rem; }
+.index-container > ul > li:nth-child(3), .index-container > ul > li:nth-child(4) { margin-top: 0.05333rem; height: 2.21333rem; line-height: 2.21333rem; }
+
+/*# sourceMappingURL=index.css.map */

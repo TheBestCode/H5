@@ -1,0 +1,64 @@
+$html-default-font-size:37.5px !default;
+@function rem($px){
+    @return $px /  $html-default-font-size * 1rem;
+}
+@mixin page{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+@mixin a-btn{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+$main-color: #ffc712 !default;
+$minor-color:  #222021 !default;
+
+$lv1-font-size:  15px !default;
+$lv2-font-size:  13px !default;
+$lv3-font-size:  12px !default;
+$lv4-font-size:  10px !default;
+
+body{
+    @include page;
+    font-family: "microsoft yahei";
+}
+
+.page{
+    @include page; 
+    >header.head-title{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: rem(40px);
+        line-height: rem(40px);
+        background: #3C3232;
+        color: #fff;
+        font-size: rem(16px);
+        text-align: center;
+        >a.back{
+            position: absolute;
+            left: 0;
+            width: rem(40px);
+            height: 100%;
+            @include a-btn;
+            color: #fff;
+        }
+    }
+    section.container{
+        position: absolute;
+        top: rem(40px);
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
