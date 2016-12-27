@@ -3,7 +3,7 @@
   typeof define === 'function' && define.amd ? define(factory) :
   (global.utils = factory());
 }(this, function() {
-	var utils = new Object();
+	var utils = {};
 	/**
 	 * 获取当前页面URL的参数
 	 * @param {String} name
@@ -45,4 +45,4 @@
 	};
 	
 	return utils;
-});
+})
