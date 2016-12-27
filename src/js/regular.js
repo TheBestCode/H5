@@ -9,6 +9,8 @@ function regular() {
         //url
         url:/^(\w+):\/\/([\w.]+)\/(\S*)$/,
         //手机号码
-        mobilePhone:/^1[3|4|5|7|8]\d{9}$/
+        mobilePhone:/^1[3|4|5|7|8]\d{9}$/,
+        //汉字
+        words:/^[\u4e00-\u9fa5]{0,}$/
     }
-}   
+}

@@ -1,19 +1,9 @@
-require.config({
-	baseUrl: 'js/lib',
-    urlArgs: "v="+Date.now(),
-});
-
-require(["jquery-1.11.0.js"],function($){
-	console.log("success");
-});
-
-
 Events = function() {
 	var listen, log, obj, one, remove, trigger, __this;
 	obj = {};
 	__this = this;
-	listen = function (key, eventfn) {  //把简历扔盒子, key就是联系方式.
-		var stack, _ref;  //stack是盒子
+	listen = function (key, eventfn) {//自定义事件监听
+		var stack, _ref;
 		stack = ( _ref = obj[key] ) != null ? _ref : obj[key] = [];
 		return stack.push(eventfn);
 	};
@@ -23,9 +13,9 @@ Events = function() {
 	};
 	remove = function (key) {
 		var _ref;
-		return ( _ref = obj[key] ) != null ? _ref.length = 0 : void 0;
+		return (_ref = obj[key] ) != null ? _ref.length = 0 : void 0;
 	};
-	trigger = function () {  //面试官打电话通知面试者
+	trigger = function () {//触发事件
 		var fn, stack, _i, _len, _ref, key;
 		key = Array.prototype.shift.call(arguments);
 		stack = ( _ref = obj[key] ) != null ? _ref : obj[key] = [];
@@ -35,11 +25,11 @@ Events = function() {
 				return false;
 			}
 		}
-		return {
-			listen: listen,
-			one: one,
-			remove: remove,
-			trigger: trigger
-		}
+	};
+	return {
+		listen: listen,
+		one: one,
+		remove: remove,
+		trigger: trigger
 	}
-}
+};
